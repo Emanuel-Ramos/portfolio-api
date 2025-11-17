@@ -1,9 +1,9 @@
 import { Router, type Request, type Response } from 'express';
 import * as documentController from '../controllers/documentController';
 
-const router: Router = Router();
+const documentRouter: Router = Router();
 
-router.get('/', documentController.getAllDocuments);
-router.post('/', documentController.createDocument);
+documentRouter.get('/', documentController.getAllDocuments);
+documentRouter.post('/', documentController.createDocument);
 
-export default router;
+export default documentRouter;
